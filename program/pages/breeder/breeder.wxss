@@ -1,0 +1,25 @@
+/* pages/breeder/breeder.wxss */
+.line{
+  border-top:0.3px rgba(17, 17, 17, 0.199) solid;
+}
+
+.phonenumber{
+  border-top: 10rpx white solid;
+  border-bottom: 10rpx white solid;
+  background-color:white;
+  display:flex;
+  justify-content: space-between;
+  margin-top: 3rpx;
+  margin-bottom: 3rpx;
+}
+
+.imag{
+  height:1000rpx;
+  width:100%;
+}
+
+
+page{
+  background-color:rgba(0, 0, 0, 0.089);
+  height:103%;
+}

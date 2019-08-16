@@ -1,0 +1,48 @@
+<view>
+
+<view class="product">
+
+<view class="pro">
+商品分类>
+<picker range="{{list}}" bindchange="change" class="picker">
+<view class="pictex" wx:if="{{!flag}}">{{flag?list[index]:'请选择'}}</view>
+<view wx:if="{{flag}}">{{flag?list[index]:'请选择'}}</view>
+</picker>
+</view>
+
+<view class="pro">原价格>
+<input class="picker" placeholder='请输入原价格' placeholder-style="color:rgb(153, 153, 153)" bindfocus="price1Input" bindblur="price1Input"/>
+</view>
+
+<view class="pro">现价格>
+<input class="picker" placeholder='请输入现价格' placeholder-style="color:rgb(153, 153, 153)" bindfocus="price2Input" bindblur="price2Input"/>
+</view>
+
+</view>
+
+
+<view class="describle">
+<textarea
+    class="text"
+    maxlength='500'
+    bindblur='text'
+    bindfocus='text'
+    placeholder="请输入商品描述"
+    placeholder-style="color:rgb(153, 153, 153);"/>
+</view>
+
+<view class="image">
+<image style="width: 200rpx; height: 200rpx;"
+ mode="aspectFill" src="{{imageurl}}" bindtap="choose"></image>
+</view>
+
+<button class="button" bindtap="button">发二手</button>
+
+<loading hidden="{{hidden}}">
+加载中...
+</loading>
+
+<view>
+
+</view>
+</view>

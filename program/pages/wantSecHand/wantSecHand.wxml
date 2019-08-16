@@ -1,0 +1,33 @@
+ <view class="movie-container">
+    <!-- 导航栏 -->
+    <view class="navbar">
+      <block wx:for="{{navbarTitle}}" wx:key="index">
+        <view class="navbar-item {{navbarActiveIndex === index ? 'navbar-item-active' : ''}}" data-navbar-index="{{index}}" catchtap="onNavBarTap"
+        >
+          <text>{{item}}</text>
+        </view>
+      </block>
+    </view>
+
+  <view class="showProducts">
+
+<view class="first" wx:for="{{navbarValue}}">
+
+   <view class="productDisplay" bindtap="productButton">
+
+   <image class="image" style="width:200rpx;height:200rpx; background-color: #eeeeee;"mode="scaleToFill"src="{{item[2]}}"></image>
+
+   <view class="describe">
+   <view class="v1">{{item[3]}}</view>
+    <view class="v2">{{item[4]}}</view>
+     <view class="v3">{{item[5]}}发布</view>
+   </view>
+
+   </view>
+
+       <view class="line"></view>
+   </view>
+
+   </view>
+
+ </view>

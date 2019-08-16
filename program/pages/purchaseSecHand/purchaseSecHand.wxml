@@ -1,0 +1,44 @@
+      <!--搜索框-->
+     <!--<view class='page_row' bindtap="suo">  
+      <view class="search">  
+        <view class="df search_arr">  
+          <icon class="searchcion" size='20' type='search'></icon>  
+          <input class=""  placeholder="请输入关键字" value="{{searchValue}}"/>  
+        </view>  
+      </view>  
+      <view class='sousuo'>搜索</view>  
+    </view>  -->
+
+     <!--背景图片-->
+      <view class="section__ctn">
+        <image
+          style="width: 750rpx; height: 1200rpx; background-color: #eeeeee;"
+          mode="scaleToFill"
+          src="/image/8.jpg"
+        ></image>
+      </view>
+
+
+<swiper class="swiper" 
+indicator-color="white"
+indicator-dots="true" style="width:750rpx;height:500rpx">
+<swiper-item>
+<image class="imag1" mode="aspectFit" src="/image/13.jpg"/>
+</swiper-item>
+<swiper-item>
+<image class="imag1" mode="aspectFit" src="/image/13.jpg"/>
+</swiper-item>
+</swiper>
+
+
+<!--购买按钮1-->
+<view class="button1"><image style="width: 750rpx; height: 250rpx;"
+          mode="scaleToFill"
+          src="/image/10.png" bindtap="button1"></image>
+</view>
+<!--购买按钮2-->
+<view class="button2"><image style="width: 750rpx; height: 250rpx;"
+          mode="scaleToFill"
+          src="/image/7.png" bindtap="button2"></image>
+</view>
+

@@ -1,0 +1,95 @@
+<view class="all">
+
+<swiper class="swiper" 
+indicator-color="white"
+indicator-dots="true" style="height:450rpx">
+<swiper-item>
+<image class="imag1" src="/image/7.png" mode="aspectFit"/>
+</swiper-item>
+<swiper-item>
+<image class="imag1" src="/image/10.png" mode="aspectFit"/>
+</swiper-item>
+<swiper-item>
+<image class="imag1" src="/image/8.jpg" mode="aspectFit"/>
+</swiper-item>
+</swiper>
+
+<view class="require"></view>
+
+<view class="inline">要求</view>
+
+<view  class="text"><text class="tex">11111111111111111111113211 1111111111111111111111111111111111111111111111111111111111111 11111111111111111111111111111111111111111 111111111111111111111111111111111111111111111111111 11111111111111111111111111 111111111111111111111111111 11111111111111111111111111111111 11111111</text></view>
+
+<view class="liuyan">留言~</view>
+
+<!--用户评论-->
+<view class="comment">
+
+<view class="section__ctn">
+        <image
+          style="width: 50px; height: 50px; background-color: #eeeeee;"
+          mode="aspectFit"
+          src="/image/6.png"
+        ></image>
+      </view>
+
+
+<view class="wordsFlex">
+<view class="nickName">昵称</view>
+<view class="words">评论</view>
+<view class="time">05月05日 18:33</view>
+</view>
+
+</view>
+
+<view class="comment">
+
+<view class="section__ctn">
+        <image
+          style="width: 50px; height: 50px; background-color: #eeeeee;"
+          mode="aspectFit"
+          src="/image/6.png"
+        ></image>
+      </view>
+
+
+<view class="wordsFlex">
+<view class="nickName">昵称</view>
+<view class="words">评论</view>
+<view class="time">05月05日 18:33</view>
+</view>
+
+</view>
+
+
+<view  class="downPush">
+<view>下拉加载更多~</view>
+</view>
+
+<view class="buttonBottom">
+
+<view class="buttonFlex">
+<button class="button" bindtap="modalinput">评论</button>
+<button class="button1" bindtap="collect">收藏</button>
+<button class="button2" bindtap="contact">联系他</button>
+</view>
+
+</view>
+
+  <modal id="modal" hidden="{{hiddenmodalput}}" title="评论" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+      <textarea placeholder="请输入评论：" bindblur="bindTextAreaBlur"
+    value="{{details}}"
+    auto-focus/>
+  </modal>
+
+  <modal title="个人介绍" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+    <view>
+      <image style="width: 550rpx; height: 550rpx; background-color: #eeeeee;" class="image" src="/image/6.png" mode='aspectFit'></image>
+    </view>
+    
+    <view>You say that you love rain,</view>
+    <view>but you open your umbrella when it rains...</view>
+    You say that you love the sun, 
+  </modal>
+
+</view>

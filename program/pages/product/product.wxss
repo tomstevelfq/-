@@ -1,0 +1,122 @@
+/* pages/product/product.wxss */
+page{
+  background-color: rgba(220, 220, 220, 0.295);
+  height:2000px；
+}
+
+.require{
+  background-color: white;
+  height:100rpx;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+}
+
+.inline{
+  margin-top: -80rpx;
+  margin-left: 20rpx;
+}
+
+.text{
+   display:flex;
+  width:100%;
+  flex-wrap:warp;
+  white-space:pre-wrap;
+  margin-top: 40rpx;
+  background-color: white;
+}
+
+.liuyan{
+  background-color: white;
+  margin-top: 10rpx;
+  border-bottom:20rpx rgba(255, 255, 255, 0.199) solid;
+  border-top:20rpx rgba(255, 255, 255, 0.199) solid;
+}
+
+
+.liuyantext{
+  margin-top: -100rpx;
+}
+
+.buttonBottom{
+  width:100%;
+  position:fixed;
+  bottom:0px;
+}
+
+.button{
+  margin-top: 30rpx;
+  width:32%;
+  background: #14a1fd;
+  color:#fff;
+}
+
+.button1{
+  margin-top: 30rpx;
+  width:32%;
+  background: #fd14c3;
+  color:#fff;
+  font-size: 40rpx;
+}
+
+.button2{
+  margin-top: 30rpx;
+  width:32%;
+  background: #9414fd;
+  color:#fff;
+}
+
+.buttonFlex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.all{
+  height:2000px;
+}
+
+.imag1{
+  margin-left: 80rpx;
+}
+
+.downPush{
+  margin-top: 20rpx;
+  display:flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.comment{
+   display: flex;
+   margin-top: 20rpx;
+   flex-direction: row;
+   background-color: white;
+}
+
+.wordsFlex{
+  margin-left: 30rpx;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
+
+.userImage{
+  width:50rpx;
+  height:50rpx;
+}
+
+.nickName{
+     font-size: 30rpx;
+     color:#14cefd;
+}
+
+.words{
+   font-size: 30rpx;
+   margin-top: 10rpx;
+}
+
+.time{
+    font-size: 20rpx;
+    margin-top: 10rpx;
+    color: rgba(128, 128, 128, 0.534);
+}

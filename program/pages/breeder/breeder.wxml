@@ -1,0 +1,7 @@
+<text>\n</text>
+<view class="line"></view>
+<view class="phonenumber">
+<text>电话：</text>
+<text>18801122100</text>
+</view>
+<image class="imag" src="/image/5.jpeg" data-src="/image/5.jpeg" bindtap="previewImage"></image>

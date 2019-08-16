@@ -1,0 +1,158 @@
+<view class="flexall">
+
+<view class="flex2">
+
+<view class="flex1">
+<image class="imag1" src="/image/6.png" mode="aspectFit"/>
+<view>美食</view>
+</view>
+
+<view class="flex1">
+<image class="imag1" src="/image/6.png" mode="aspectFit"/>
+<view>电影ktv</view>
+</view>
+
+<view class="flex1">
+<image class="imag1" src="/image/6.png" mode="aspectFit"/>
+<view>酒店</view>
+</view>
+
+<view class="flex1">
+<image class="imag1" src="/image/6.png" mode="aspectFit"/>
+<view>拼团</view>
+</view>
+
+</view>
+
+
+
+
+
+<view class="flex2">
+
+<view class="flex1">
+<image class="imag1" src="/image/6.png" mode="aspectFit"/>
+<view>官方游</view>
+</view>
+
+<view class="flex1">
+<image class="imag1" src="/image/6.png" mode="aspectFit"/>
+<view>周边游</view>
+</view>
+
+<view class="flex1">
+<image class="imag1" src="/image/6.png" mode="aspectFit"/>
+<view>团建</view>
+</view>
+
+<view class="flex1">
+<image class="imag1" src="/image/6.png" mode="aspectFit"/>
+<view>特价玩乐</view>
+</view>
+
+</view>
+
+
+
+</view>
+
+
+
+<view class="flexall2">
+
+<view class="flex4">
+<view>特价优惠</view>
+<view>更多></view>
+</view>
+
+<view class="flex2">
+
+<view class="flex3">
+<image class="imag2" src="/image/3.jpeg" mode="aspectFit"/>
+<view>美食</view>
+<view>
+<text class="price1">原价</text>
+<text class="price2">折扣价</text>
+</view>
+</view>
+
+<view class="flex3">
+<image class="imag2" src="/image/3.jpeg" mode="aspectFit"/>
+<view>电影ktv</view>
+<view>
+<text class="price1">原价</text>
+<text class="price2">折扣价</text>
+</view>
+</view>
+
+<view class="flex3">
+<image class="imag2" src="/image/3.jpeg" mode="aspectFit"/>
+<view>酒店</view>
+<view>
+<text class="price1">原价</text>
+<text class="price2">折扣价</text>
+</view>
+</view>
+
+</view>
+</view>
+
+
+
+
+
+
+
+<view class="flexall3">
+
+<view class="like">猜你喜欢</view>
+
+
+<view class="flex7">
+<image class="imag3" src="/image/3.jpeg" mode="aspectFill"/>
+<view class="flex6">
+<view>标题(最多八个字)</view>
+<view>详情介绍</view>
+<view class="price3">
+<text class="price1">原价</text>
+<text class="price2">折扣价</text>
+<text class="sold">已售</text>
+</view>
+</view>
+</view>
+
+<view class="flex7">
+<image class="imag3" src="/image/3.jpeg" mode="aspectFill"/>
+<view class="flex6">
+<view>标题(最多八个字)</view>
+<view>详情介绍</view>
+<view class="price3">
+<text class="price1">原价</text>
+<text class="price2">折扣价</text>
+<text class="sold">已售</text>
+</view>
+</view>
+</view>
+
+<view class="flex7">
+<image class="imag3" src="/image/3.jpeg" mode="aspectFill"/>
+<view class="flex6">
+<view>标题(最多八个字)</view>
+<view>详情介绍</view>
+<view class="price3">
+<text class="price1">原价</text>
+<text class="price2">折扣价</text>
+<text class="sold">已售</text>
+</view>
+</view>
+</view>
+
+
+
+</view>
+
+
+
+
+
+<view class="flexall4"><view>更多</view></view>

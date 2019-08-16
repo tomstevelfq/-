@@ -1,0 +1,57 @@
+<view class="container">
+    <!-- tab导航栏 -->
+    <!-- scroll-left属性可以控制滚动条位置 -->
+    <!-- scroll-with-animation滚动添加动画过渡 -->
+    <scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+        <block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+            <view class="nav-item {{currentTab == idx ?'active':''}}"  data-current="{{idx}}" bindtap="switchNav">{{navItem.text}}</view>
+        </block>        
+    </scroll-view>
+</view>
+
+<!-- 页面内容 -->
+<view class="all">
+<view wx:for="{{list}}">
+
+     <view class="imageFlex" bindtap="tapBuyButton">
+
+
+        <image
+          class="img1"
+          style="width: 350rpx; height: 400rpx; background-color: #eeeeee;"
+          mode="aspectFill"
+          src="{{host+list[index][0]}}"
+        ></image>
+
+        <view class="first">
+
+        <view style="font-size:30rpx">{{list[index][1]}}</view>
+        <view class="lineFlex">
+        <view class="money">{{price}}{{list[index][2]}}</view>
+        <view class="want">{{list[index][3]}}人想要</view>
+        </view>
+
+
+       <view class="lineFlex2">
+
+       <image
+          style="width: 120rpx; height: 120rpx;"
+          mode="scaleToFill"
+          src="/image/6.png"
+        ></image> 
+
+        <view>
+        <text class="name" style="font-size:28rpx">小萌新</text>
+        <view class="name" id="name1" style="font-size:28rpx">2016.1.1发布</view>
+        </view>
+        </view>
+        </view>   
+  </view>
+  </view>
+   </view>  
+
+
+
+
+
+<image bindtap='rotate' class="image" mode="aspectFit" animation="{{animation}}" src='/image/add.png'></image>
