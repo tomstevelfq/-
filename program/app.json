@@ -13,7 +13,12 @@
     "pages/purchaseSecHand/purchaseSecHand",
     "pages/collect/collect",
     "pages/wantSecHand/wantSecHand",
-    "pages/release/release"
+    "pages/release/release",
+    "pages/search/search",
+    "pages/edu/edu",
+    "pages/pt/pt",
+    "pages/edu/details/details",
+    "pages/pt/details/details"
   ],
   "tabBar": {
     "list": [
@@ -26,14 +31,14 @@
       {
         "iconPath": "image/首页.png",
         "selectedIconPath": "image/首页1.png",
-        "pagePath": "pages/breeder/breeder",
-        "text": "饲养员"
+        "pagePath": "pages/collect/collect",
+        "text": "我的收藏"
       },
       {
         "iconPath": "image/首页.png",
         "selectedIconPath": "image/首页1.png",
         "pagePath": "pages/bear/bear",
-        "text": "本熊"
+        "text": "我的世界"
       }
     ]
   },

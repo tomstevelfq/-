@@ -1,8 +1,19 @@
-   <view class="navbar">
-      <block wx:for="{{navbarTitle}}" wx:key="index">
-        <view class="navbar-item {{navbarActiveIndex === index ? 'navbar-item-active' : ''}}" data-navbar-index="{{index}}" catchtap="onNavBarTap"
-        >
-          <text>{{item}}</text>
-        </view>
-      </block>
+<view class="menu">
+  <view class="column" bindtap="">
+    <image class="icon" mode="scaleToFill" src="/image/6.png"></image>
+    <view class=Text">
+      <view class="title">我的发布</view>
+      <view class="text">我发布了一些奇奇怪怪的东西-webkit-line-clamp: 4-webkit-line-clamp: 4-webkit-line-clamp: 4</view>
     </view>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="column" bindtap="">
+    <image class="icon" mode="scaleToFill" src="/image/6.png"></image>
+    <view class=Text">
+      <view class="title">我的收藏</view>
+      <view class="text">我收藏了一些奇奇怪怪的东西-webkit-line-clamp: 4-webkit-line-clamp: 4-webkit-line-clamp: 4</view>
+    </view>
+  </view>
+</view>

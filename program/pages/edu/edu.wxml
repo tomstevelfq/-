@@ -1,0 +1,47 @@
+<!--pages/edu/edu.wxml-->
+<view>
+  <swiper class="swiper" indicator-color="white" indicator-dots="true">
+    <swiper-item>
+      <image class="imag1" src="/image/12.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image class="imag1" src="/image/3.jpeg" />
+    </swiper-item>
+    <swiper-item>
+      <image class="imag1" src="/image/1.jpeg" />
+    </swiper-item>
+  </swiper>
+
+  <view class="project">
+    <navigator url='details/details?cat=1'>
+      <image src="/image/edu/1.jpg" class="image"></image>
+    </navigator>
+  </view>
+
+  <view class="ar_line"></view>
+
+  <view class="project">
+    <navigator url='details/details?cat=2'>
+      <image src="/image/edu/2.jpg" class="image"></image>
+    </navigator>
+  </view>
+
+  <view class="ar_line"></view>
+
+  <view class="project">
+    <navigator url='details/details?cat=3'>
+      <image src="/image/edu/3.jpg" class="image"></image>
+    </navigator>
+  </view>
+
+  <view class="ar_line"></view>
+
+  <view class="project">
+    <navigator url='details/details?cat=4'>
+      <image src="/image/edu/4.jpg" class="image"></image>
+    </navigator>
+  </view>
+  <view class="ar_line"></view>
+
+
+</view>

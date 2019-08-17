@@ -1,0 +1,73 @@
+/* pages/search/search.wxss */
+
+.WTF{
+  margin-top: 100px;
+  
+}
+.search{
+  border: 0rpx;
+}
+.liebiao{
+  width: 98%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  border-radius: 100rpx;
+  border: 5rpx solid #f0f8ff;
+  margin-bottom: 5rpx;
+  padding-bottom: 8rpx;
+}
+.xinxi{
+display: flex;
+flex-direction: column;
+width: 450rpx;
+height: 100%;
+}
+
+
+.touxiang{
+  width: 200rpx;
+  height: 100%;
+    margin-left:3rpx;
+  margin-top: 3rpx;
+
+}
+.touxiangpic{
+  width:170rpx;
+  height: 170rpx;
+  border-radius: 3rem;
+  margin-top: 15rpx; 
+    margin-left: 3rpx; 
+    border: 3rpx solid #63b8ff;
+
+}
+.jieshao{
+  height: 80%;
+  width: 100%;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.jieshao text{
+    display: -webkit-box;
+    font-size:28rpx;
+    color:#000000;
+    line-height: 40rpx;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.biaoti{
+  height: 20%;
+  width: 100%;
+  font-size: 35rpx;
+}
+.fenlei{
+  height: 20%;
+  width: 45rpx;
+  margin-left: 10rpx;
+  margin-top: 20rpx;
+  color: gray;
+  font-size: 20rpx;
+}

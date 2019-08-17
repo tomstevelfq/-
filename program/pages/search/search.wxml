@@ -1,0 +1,27 @@
+<!--pages/search/search.wxml-->
+<view class='search'>
+  <view class='searc'>
+    <!-- <button form-type='submit' plain='true' class='search' > -->
+    <image class='iconSearch' src='https://upload.cc/i1/2018/12/14/MpztHa.png'></image>
+  </view>
+  <view class='inputInfo'>
+    <form bindsubmit="formSubmit">
+      <input placeholder='请输入关键字' placeholder-style='font-size:32rpx;color:#8f8b84' name='id' focus='true' confirm-type='search' bindconfirm='formSubmit'></input>
+    </form>
+  </view>
+</view>
+
+<view class='liebiao' wx:for="{{re}}" wx:key='id' bindtap='details' hover-class="change" id='{{item.id}}'>
+  <view class='touxiang'>
+    <image class='touxiangpic' src='{{item.avatarUrl}}'>
+    </image>
+  </view>
+  <view class='xinxi'>
+    <view class='biaoti'>{{item.title}}</view>
+    <view class='jieshao'>{{jieshao}}
+      <text>{{item.details}}</text>
+    </view>
+  </view>
+  <image class='fenlei' src='{{item.type}}'></image>
+  </view>
+  <view>{{result}}</view>

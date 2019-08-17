@@ -64,6 +64,13 @@ Page({
 
   },
 
+  //搜索按钮
+  search: function () {
+    wx.navigateTo({
+      url: '../search/search',
+    })
+  },
+
   //购闲置按钮
   purchaseTap: function(){
       wx.navigateTo({
@@ -81,6 +88,17 @@ Page({
     wx.navigateTo({
       url: '/pages/purchaseSecHand/purchaseSecHand',
     })
-  }
+  },
 
+  pt: function () {
+    wx.navigateTo({
+      url: '/pages/pt/pt',
+    })
+  },
+
+  edu: function () {
+    wx.navigateTo({
+      url: '/pages/edu/edu',
+    })
+  }
 })

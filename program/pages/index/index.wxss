@@ -4,6 +4,21 @@ page{
   height:100%;
 }
 
+.search{
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+}
+.fakeSearch{
+font-size:32rpx;
+color:#8f8b84;
+background-color: white;
+border-radius: 10rpx;
+height: 60rpx;
+line-height:60rpx;
+width:100%
+}
+
 .swiper{
   height:400rpx
 }

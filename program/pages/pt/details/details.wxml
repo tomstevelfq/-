@@ -1,0 +1,27 @@
+<!--pages/pt/details/details.wxml-->
+<view>
+  <swiper class="swiper" indicator-color="white" indicator-dots="true">
+    <swiper-item>
+      <image class="imag1" src="/image/12.jpg"/>
+    </swiper-item>
+    <swiper-item>
+      <image class="imag1" src="/image/3.jpeg"/>
+    </swiper-item>
+    <swiper-item>
+      <image class="imag1" src="/image/1.jpeg"/>
+    </swiper-item>
+  </swiper>
+
+  <block wx:for="{{ptArray[cat-1]}}" wx:key="{{item.id}}"> 
+    <view class="project">
+        <view class="content">
+            <view class="text">{{item.title}}</view>
+            <view class="text">{{item.pay}}</view>
+            <view class="text">{{item.tel}}</view>
+        </view>
+        <image src="{{item.src}}" class="image"></image>   
+    </view>
+    <view class="ar_line"></view>
+  </block>
+
+</view>
