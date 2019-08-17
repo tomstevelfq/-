@@ -1,40 +1,47 @@
-// pages/bear/bear.js
+// pages/pt/details/details.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-     signIn:0,
+    ptArray: [
+      [{
+        id: 1,
+        src: '/image/6.png',
+        title: '焕世界创业团队',
+        pay: '薪资：面谈',
+        tel: '联系：18801122106',
+        content:''
+      }], [{
+        id: 2,
+        src: '/image/6.png',
+        title: '缺位以待',
+        pay: '薪资：暂无',
+        tel: '联系：18801122106'
+      }]
+    ],
+    cat: []
   },
-
-  //我的收藏按钮
-  collect:function(e){
-     wx.navigateTo({
-       url: '/pages/collect/collect',
-     })
-  },
-
-    //我的发布按钮
-  release: function (e) {
-    wx.navigateTo({
-      url: '/pages/release/release',
-    })
-  },
-  
-    //我的信息按钮
-  message: function (e) {
-    wx.navigateTo({
-      url: '/pages/message/message',
-    })
-  },
-
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    that.setData({
+      cat: options.cat
+    })
+    console.log(that.data.cat)
+    /*wx.getStorage({
+      key: 'ptArray',
+      success: function (res) {
+        // success
+        that.setData({
+          ptArray: res.data
+        })
+      }
+    })*/
   },
 
   /**

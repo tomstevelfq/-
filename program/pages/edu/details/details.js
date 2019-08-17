@@ -1,40 +1,42 @@
-// pages/bear/bear.js
+// pages/pt/details/details.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-     signIn:0,
+    eduArray: [
+      [{
+        src: ''
+      }],
+      [{
+        src: ''
+      }],
+      [{
+        src: '/image/edu/xdf.jpg'
+      }]
+    ],
+    cat: []
   },
-
-  //我的收藏按钮
-  collect:function(e){
-     wx.navigateTo({
-       url: '/pages/collect/collect',
-     })
-  },
-
-    //我的发布按钮
-  release: function (e) {
-    wx.navigateTo({
-      url: '/pages/release/release',
-    })
-  },
-  
-    //我的信息按钮
-  message: function (e) {
-    wx.navigateTo({
-      url: '/pages/message/message',
-    })
-  },
-
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    that.setData({
+      cat: options.cat
+    })
+    console.log(that.data.cat)
+    /*wx.getStorage({
+      key: 'ptArray',
+      success: function (res) {
+        // success
+        that.setData({
+          ptArray: res.data
+        })
+      }
+    })*/
   },
 
   /**

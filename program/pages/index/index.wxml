@@ -1,46 +1,52 @@
-<view>
-  <swiper class="swiper" indicator-color="white" indicator-dots="true">
-    <swiper-item>
-      <image class="imag1" src="/image/12.jpg"/>
-    </swiper-item>
-    <swiper-item>
-      <image class="imag1" src="/image/13.jpg"/>
-    </swiper-item>
-    <swiper-item>
-      <image class="imag1" src="/image/1.jpeg"/>
-    </swiper-item>
-  </swiper>
+<view class='search' bindtap='search'>
+  <view class='searc'>
+    <image class='iconSearch' src='https://upload.cc/i1/2018/12/14/MpztHa.png'></image>
+  </view>
+  <view class='inputInfo'>
+    <view class='fakeSearch'>请输入关键字</view>
+  </view>
+</view>
+
+<swiper class="swiper" indicator-color="white" indicator-dots="true">
+  <swiper-item>
+    <image class="imag1" src="/image/12.jpg" />
+  </swiper-item>
+  <swiper-item>
+    <image class="imag1" src="/image/13.jpg" />
+  </swiper-item>
+  <swiper-item>
+    <image class="imag1" src="/image/1.jpeg" />
+  </swiper-item>
+</swiper>
 
 
 <view class="layout1">
-<view class="flex1">
-<view bindtap="studentPrice"><image class="img1" src="/image/6.png"/></view>
-<view>学生价</view>
-</view>
-<view class="flex1">
-<image bindtap="secHand" class="img1" src="/image/6.png"/>
-<view>二手货</view>
-</view>
-<view class="flex1">
-<image class="img1" src="/image/6.png"/>
-<view class="extra">兼职</view>
-</view>
-<view class="flex1">
-<image class="img1" src="/image/6.png"/>
-<view class="extra">教育</view>
-</view>
+  <view class="flex1">
+    <image bindtap="studentPrice" class="img1" src="/image/6.png" />
+    <view>学生价</view>
+  </view>
+  <view class="flex1">
+    <image bindtap="secHand" class="img1" src="/image/6.png" />
+    <view>二手货</view>
+  </view>
+  <view class="flex1">
+    <image bindtap="pt" class="img1" src="/image/6.png" />
+    <view class="extra">兼职</view>
+  </view>
+  <view class="flex1">
+    <image bindtap="edu" class="img1" src="/image/6.png" />
+    <view class="extra">教育</view>
+  </view>
 </view>
 
 
 
 <view class="layout1">
-<image class="img2" src="/image/1.jpeg"/>
-<image class="img2" bindtap="purchaseTap" src="/image/2.jpeg"/>
+  <image class="img2" src="/image/1.jpeg" />
+  <image class="img2" bindtap="purchaseTap" src="/image/2.jpeg" />
 </view>
 
 <view class="layout1">
-<image class="img2" src="/image/3.jpeg"/>
-<image class="img2" src="/image/4.jpeg"/>
-</view>
-
+  <image class="img2" src="/image/3.jpeg" />
+  <image class="img2" src="/image/4.jpeg" />
 </view>

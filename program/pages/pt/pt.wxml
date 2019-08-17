@@ -1,0 +1,31 @@
+<!--pages/pt/pt.wxml-->
+<view>
+  <swiper class="swiper" indicator-color="white" indicator-dots="true">
+    <swiper-item>
+      <image class="imag1" src="/image/12.jpg"/>
+    </swiper-item>
+    <swiper-item>
+      <image class="imag1" src="/image/3.jpeg"/>
+    </swiper-item>
+    <swiper-item>
+      <image class="imag1" src="/image/1.jpeg"/>
+    </swiper-item>
+  </swiper>
+
+  <block wx:for="{{ptArray}}" wx:key="{{item.id}}"> 
+    <view class="project" bindtap="modal" data-request="{{item.request}}">
+      <view class="content">
+          <view class="text">{{item.title}}</view>
+          <view class="text">{{item.pay}}</view>
+          <view class="text">{{item.tel}}</view>
+      </view>
+      <image src="{{item.src}}" class="image"></image>   
+    </view>
+    <view class="ar_line"></view>
+  </block>
+
+  <view class="skipTop" catchtap="skipTop" wx:if="{{unload}}">
+    <image src="http://boweisou.oss-cn-shenzhen.aliyuncs.com/images/0/2018/11/ZBtqujbbcGjBDgjt0bbJqbTuGqq0z8.png"></image>
+  </view>
+
+</view>

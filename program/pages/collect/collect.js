@@ -5,49 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    navbarTitle: [
-      "发闲置",
-      "求闲置",
-      "求拼单"
-    ],  
   },
-
-
-  /**
- * 点击导航栏
- */
-  onNavBarTap: function (event) {
-    // 获取点击的navbar的index
-    let navbarTapIndex = event.currentTarget.dataset.navbarIndex
-    // 设置data属性中的navbarActiveIndex为当前点击的navbar
-    this.setData({
-      navbarActiveIndex: navbarTapIndex
-
-    })
-
-  },
-
-  /**
-   * 
-   */
-  onBindAnimationFinish: function ({ detail }) {
-    // 设置data属性中的navbarActiveIndex为当前点击的navbar
-    this.setData({
-      navbarActiveIndex: detail.current
-    })
-
-  },
-
-  productButton: function () {
-    wx.navigateTo({
-      url: '/pages/product/product',
-    })
-  },
-
-
-
-
-
 
   /**
    * 生命周期函数--监听页面加载

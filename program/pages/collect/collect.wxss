@@ -1,74 +1,62 @@
 /* pages/collect/collect.wxss */
-.page{
-  background-color:rgb(127, 245, 133);
-  height:120%;
+page{
+  background-color:rgba(226, 228, 228, 0.308);
+}
+
+.menu{
+  width:100%;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  border:1.2px solid #8080804d;
 }
 
 .line{
-  border-top:0.3px rgba(17, 17, 17, 0.199) solid;
-  margin-top: -10rpx;
-  margin-bottom: 5rpx;
+  border-top:1.2px rgba(17, 17, 17, 0.322) solid;
 }
 
- .movie-container{
-    display: flex;
-    flex-direction: column;
-  }
-  .navbar{
-    display: flex;
-    position: absolute;
-   left: 0;
-    top: 0;
-   z-index: 500;
-   width: 100%;
-   height: 50px;
-   flex-direction: row;
-   text-align: center;
-   color: #A8A8A8;
-   font-size: 15px;
-   box-sizing: border-box;
-   background-color: #FFF;
-   border-bottom: 1rpx solid #DFDFDF;
- }
- .navbar-item{
-   flex: 1;
-   padding: 26rpx 0px;
- }
- .navbar-item-active{
-   background-color: rgba(51, 166, 243, 0.678);
-   transition: all 0.3s;
-   color: #494949;
- }
- 
- .showProducts{
-   padding-top: 50px;
- }
+.column{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10rpx;
+  margin-bottom:10rpx;
+  margin-top:10rpx;
+}
 
- .productDisplay{
-   display: flex;
-   flex-direction: row;
-   background-color: white;
- }
- 
- .image{
-   margin-bottom: 20rpx;
- }
+.columnBtn{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+}
 
- .describe{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
- }
+.icon{
+  margin-left: 0rpx;
+  border:1.2px solid #8080804d;
+  width: 240rpx; 
+  height: 280rpx; 
+}
 
- .v1{
-   font-size: 50rpx;
- }
+.Text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 30rpx;
+  height: 280rpx;
+  width:440rpx;
+}
 
- .v2{
-   font-size: 30rpx;
- }
+.title{
+  font-size:40rpx;
+  margin-top: -50rpx;
+}
 
- .v3{
-   font-size: 20rpx;
-   color:#DFDFDF;
- }
+.text{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  margin-top: -100rpx;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+  font-size:30rpx;
+}
