@@ -1,3 +1,5 @@
 微信小程序
 appid:wxd58ddac6cda7a362
 appsecret:2965d8da7420a7fb17cbde43e2b4189a
+
+整合服务端接口
