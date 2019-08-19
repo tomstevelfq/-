@@ -14,7 +14,7 @@ Page({
     currentTab: 0,
     navScrollLeft: 0,
     animation:'',
-    list:null,
+    product_list:null,
     listt:null,
     host:'http://'+app.globalData.host+'/static/',
   },
@@ -47,7 +47,7 @@ Page({
   //事件处理函数
   onLoad: function () {
     var that=this
-    this.setData({
+   /* this.setData({
       navData: [
         {
           text: "二手书"
@@ -62,7 +62,7 @@ Page({
           text: '其他'
         },
       ],
-    })
+    })*/
 
     _animation = wx.createAnimation({
       transformOrigin: '50% 50% 0',
@@ -71,8 +71,38 @@ Page({
       delay: 0,
     })
 
+    console.log('session_key')
+    console.log(app.globalData.session_key)
 
+    //请求导航栏菜单选项
     wx.request({
+      url:'http://' + app.globalData.host + '/navdata',
+      method:'POST',
+      header: {
+        'content-type': 'application/x-www-form-urlencoded',
+        'session-key':app.globalData.session_key,
+      },
+      success:function(res){
+        console.log('导航栏')
+        console.log(res.data.state)
+        //判断是否处于登录
+        if(res.data.state=='have login'){
+          console.log(res.data.nav_list)
+          that.setData({
+            navData:res.data.nav_list
+          })
+        }
+        else{
+          wx.showModal({
+            title: '提示',
+            content: '未登录',
+          })
+        }
+      }
+    })
+
+
+    /*wx.request({
       url: 'http://' + app.globalData.host + '/products',
       method: 'POST',
       header: {
@@ -86,7 +116,7 @@ Page({
           list:res.data[0]
         })
       }
-    })
+    })*/
 
     
 

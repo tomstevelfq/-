@@ -11,11 +11,11 @@
 </view>
 
 <view class="pro">原价格>
-<input class="picker" placeholder='请输入原价格' placeholder-style="color:rgb(153, 153, 153)" bindfocus="price1Input" bindblur="price1Input"/>
+<input class="picker" placeholder='请输入原价格' placeholder-style="color:rgb(153, 153, 153)" bindfocus="priceBefore" bindblur="priceBefore"/>
 </view>
 
 <view class="pro">现价格>
-<input class="picker" placeholder='请输入现价格' placeholder-style="color:rgb(153, 153, 153)" bindfocus="price2Input" bindblur="price2Input"/>
+<input class="picker" placeholder='请输入现价格' placeholder-style="color:rgb(153, 153, 153)" bindfocus="priceNow" bindblur="priceNow"/>
 </view>
 
 </view>

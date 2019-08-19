@@ -17,8 +17,8 @@ Page({
        tempFilePaths:null,
        imageurl: '/image/11.png',
        sort:null,
-       price1:null,
-       price2:null,
+       priceBrfore:null,
+       priceNow:null,
        content:null,
        hidden:true,
   },
@@ -67,7 +67,7 @@ Page({
     })
   },
 
-
+  //商品类别
   change:function(e){
      this.setData({
        flag:true,
@@ -75,17 +75,27 @@ Page({
        sort:this.data.list[e.detail.value]
      })
   },
-
-  price2Input:function(e){
+  
+  //原价格
+  priceBefore:function(e){
     this.setData({
-      price2:e.detail.value
+      priceBefore:e.detail.value,
     })
+  },
+  
+  //现价格
+  priceNow:function(e){
+    this.setData({
+      priceNow:e.detail.value
+    })
+    console.log(this.data.priceBefore)
   },
 
   text:function(e){
      this.setData({
        content:e.detail.value
      })
+    console.log(this.data.priceNow)
   },
 
 
