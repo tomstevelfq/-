@@ -1,15 +1,15 @@
 {
   "pages": [
     "pages/authorize/authorize",
+    "pages/buySecHand/buySecHand",
+    "pages/publish/publish",
     "pages/studentPrice/studentPrice",
     "pages/message/message",
-    "pages/publish/publish",
     "pages/product/product",
     "pages/bear/bear",
     "pages/breeder/breeder",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/buySecHand/buySecHand",
     "pages/purchaseSecHand/purchaseSecHand",
     "pages/collect/collect",
     "pages/wantSecHand/wantSecHand",

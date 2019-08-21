@@ -11,7 +11,7 @@
 
 <!-- 页面内容 -->
 <view class="all">
-<view wx:for="{{product_list}}">
+<view wx:for="{{product_list}}" wx:for-item="item">
 
      <view class="imageFlex" bindtap="tapBuyButton">
 
@@ -20,15 +20,15 @@
           class="img1"
           style="width: 350rpx; height: 400rpx; background-color: #eeeeee;"
           mode="aspectFill"
-          src="{{host+list[index][0]}}"
+          src="{{item.imgs[0]}}"
         ></image>
 
         <view class="first">
 
-        <view style="font-size:30rpx">{{list[index][1]}}</view>
+        <view style="font-size:30rpx">{{item.intro}}</view>
         <view class="lineFlex">
-        <view class="money">{{price}}{{list[index][2]}}</view>
-        <view class="want">{{list[index][3]}}人想要</view>
+        <view class="money">原价{{item.priceBefore}}现价{{item.priceNow}}</view>
+        <view class="want">0人想要</view>
         </view>
 
 

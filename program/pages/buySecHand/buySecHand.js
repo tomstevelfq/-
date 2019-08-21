@@ -47,22 +47,6 @@ Page({
   //事件处理函数
   onLoad: function () {
     var that=this
-   /* this.setData({
-      navData: [
-        {
-          text: "二手书"
-        },
-        {
-          text: '生活'
-        },
-        {
-          text: '女生化妆'
-        },
-        {
-          text: '其他'
-        },
-      ],
-    })*/
 
     _animation = wx.createAnimation({
       transformOrigin: '50% 50% 0',
@@ -102,21 +86,20 @@ Page({
     })
 
 
-    /*wx.request({
-      url: 'http://' + app.globalData.host + '/products',
+    wx.request({
+      url: 'http://' + app.globalData.host + '/productShow',
       method: 'POST',
       header: {
-        'content-type': 'application/x-www-form-urlencoded'
+        'content-type': 'application/x-www-form-urlencoded;charset=utf-8'
       },
      
       success: function (res) {
-        console.log('商品'+res.data)
+        console.log('商品信息'+res.data)
         that.setData({
-          listt:res.data,
-          list:res.data[0]
+          product_list:res.data
         })
       }
-    })*/
+    })
 
     
 

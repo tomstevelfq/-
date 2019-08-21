@@ -36,11 +36,16 @@ page{
 .describle{
   margin-top: 40rpx;
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .image{
   margin-top: 40rpx;
   background-color: white;
+  display:flex;
+  flex-direction: row;
+  flex-flow: row wrap;
 }
 
 .button{
@@ -48,4 +53,10 @@ page{
   width:95%;
   color:aliceblue;
   background-color: rgb(52, 133, 255);
+}
+
+.imgflex{
+  display:flex;
+  flex-direction: row;
+  flex-flow: row wrap;
 }

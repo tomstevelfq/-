@@ -32,7 +32,11 @@
 </view>
 
 <view class="image">
-<image style="width: 200rpx; height: 200rpx;"
+<span class="imgflex" wx:for="{{tempFilePaths}}" wx:for-item="item">
+<image style="width: 250rpx; height: 250rpx;"
+ mode="aspectFill" src="{{item}}"></image>
+</span>
+<image style="width: 250rpx; height: 250rpx;"
  mode="aspectFill" src="{{imageurl}}" bindtap="choose"></image>
 </view>
 
