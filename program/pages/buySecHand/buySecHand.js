@@ -40,6 +40,10 @@ Page({
 
 
   tapBuyButton:function(e){
+    console.log('tap-button')
+    console.log(e.currentTarget.id)
+    app.globalData.product_id = this.data.product_list[e.currentTarget.id].productId
+    console.log(app.globalData.product_id)
     wx.navigateTo({
       url: '/pages/product/product',
     })

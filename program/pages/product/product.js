@@ -1,4 +1,5 @@
 // pages/product/product.js
+var app=getApp()
 Page({
 
   /**
@@ -7,6 +8,9 @@ Page({
   data: {
     hiddenmodalput: true,
     modalHidden:true,
+    img_list:null,
+    priceNow:null,
+    intro:null,
   },
 
   modalinput: function () {
@@ -70,7 +74,49 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that=this
+    //获取商品信息
+    wx.request({
+      url: 'http://' + app.globalData.host + '/productData',
+      method: 'POST',
+      header: {
+        'content-type': 'application/x-www-form-urlencoded',
+        'session-key': app.globalData.session_key,
+      },
+      data:{
+        product_id:app.globalData.product_id,
+      },
+      success: function (res) {
+        console.log('商品信息')
+       // console.log(res.data.state)
+        //判断是否处于登录
+        //if (res.data.state == 'have login') {
+          var lis=res.data.imgs
+          console.log(lis[1].index,lis.length-1)
+        for (var i = lis.length-1;i>0;i--){
+            for(var j=0;j<i;j++){
+              if(lis[j].index>lis[j+1].index){
+                var temp=lis[j+1]
+                lis[j+1]=lis[j]
+                lis[j]=temp
+              }
+            }
+          }
+          console.log(lis)
+          that.setData({
+            img_list:lis,
+            priceNow:res.data.priceNow,
+            intro:res.data.intro,
+          })
+        //}
+        //else {
+        //  wx.showModal({
+        //    title: '提示',
+         //   content: '未登录',
+        //  })
+       // }
+      }
+    })
   },
 
   /**

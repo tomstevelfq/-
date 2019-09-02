@@ -64,7 +64,8 @@ Page({
             filePath: that.data.tempFilePaths[parseInt(index)],
             name: 'file',
             formData: {
-              productId: res.data.product_id
+              productId: res.data.product_id,
+              index:parseInt(index),
             },
             success(res) {
               console.log('上传图片' + res.data)

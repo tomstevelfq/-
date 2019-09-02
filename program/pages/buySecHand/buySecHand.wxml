@@ -11,16 +11,16 @@
 
 <!-- 页面内容 -->
 <view class="all">
-<view wx:for="{{product_list}}" wx:for-item="item">
+<view wx:for="{{product_list}}" wx:for-item="item" wx:for-index="index">
 
-     <view class="imageFlex" bindtap="tapBuyButton">
+     <view class="imageFlex" bindtap="tapBuyButton" id="{{index}}">
 
 
         <image
           class="img1"
           style="width: 350rpx; height: 400rpx; background-color: #eeeeee;"
           mode="aspectFill"
-          src="{{item.imgs[0]}}"
+          src="{{item.img}}"
         ></image>
 
         <view class="first">

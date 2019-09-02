@@ -3,24 +3,18 @@
 <swiper class="swiper" 
 indicator-color="white"
 indicator-dots="true" style="height:450rpx">
-<swiper-item>
-<image class="imag1" src="/image/7.png" mode="aspectFit"/>
-</swiper-item>
-<swiper-item>
-<image class="imag1" src="/image/10.png" mode="aspectFit"/>
-</swiper-item>
-<swiper-item>
-<image class="imag1" src="/image/8.jpg" mode="aspectFit"/>
+<swiper-item  wx:for="{{img_list}}" wx:for-item="item">
+<image class="imag1" src="{{item.url}}" mode="aspectFit"/>
 </swiper-item>
 </swiper>
 
 <view class="require"></view>
 
-<view class="inline">要求</view>
+<view class="inline">价格  {{priceNow}}</view>
 
-<view  class="text"><text class="tex">11111111111111111111113211 1111111111111111111111111111111111111111111111111111111111111 11111111111111111111111111111111111111111 111111111111111111111111111111111111111111111111111 11111111111111111111111111 111111111111111111111111111 11111111111111111111111111111111 11111111</text></view>
+<view  class="text"><text class="tex">  简介 {{intro}}</text></view>
 
-<view class="liuyan">留言~</view>
+<view class="liuyan">留言</view>
 
 <!--用户评论-->
 <view class="comment">

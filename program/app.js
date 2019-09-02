@@ -98,5 +98,6 @@ App({
     host: '139.155.86.119:8882',
     code:null,
     session_key:null,
+    profuct_id:null,
   }
 })
